@@ -16,7 +16,7 @@
    
 	</header>
           <style type= "text/css">
-		         p          {
+		             p          {
                                font-size: 15px;
                                color:rgb(0,0,0) ;
                                font-color:rgb(255,255,255);
@@ -148,7 +148,7 @@ h9{
 	translate:transform (-50%,-50%);
 	margin:0;
 	padding:0 20px;
-	font-size:45px;
+	font-size:30px;
 	color:#ffffff;
 	text-shadow:0 0 20px;
 }
@@ -180,31 +180,30 @@ position:relevant;
 }
 
 .cube{
-        
-        right:0px;   
-        top:800px;
+  left:700px;
+        top:100px;
         position: absolute;
-	width:400px;
-	height:1000px;
+	width:300px;
+	height:500px;
         transform-style:preserve-3d;
-        transform: rotate(45deg) rotateY(-100deg) rotateX(70deg) rotateZ(-1015deg);
-       animation:money 13s infinite ;
-       -webkit-animation: money 13s infinite;/* Safari 4.0 - 8.0 */
+        transform: rotate(50deg) rotateY(-100deg) rotateX(70deg) rotateZ(-1015deg);
+       animation:money 10s infinite ;
+       -webkit-animation: money 10s infinite;/* Safari 4.0 - 8.0 */
 }
  
 
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes money{
- 0% { transform:rotateY(0deg);}
-100% { transform:rotateY(360deg);}
+ 0% { transform:rotateY(70deg);}
+100% { transform:rotateY(-30deg);}
 
   
 }
 		  
 @keyframes  money{
- 0% { transform:rotateY(0deg);}
-100% { transform:rotateY(360deg);}
+ 0% { transform:rotateY(70deg);}
+100% { transform:rotateY(-30deg);}
 
 }  
 
@@ -217,107 +216,116 @@ position:relevant;
   border-style:outset;
        border-color:rgb(255, 255, 255);
 }
-
-.top {
-  transform: translateZ(-315px);
-  transform: rotateY(10deg)
-  background-color:rgb(0, 215, 255, .5);
-	border-style:outset;
+.sides {
+  width: 150px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-style:outset;
        border-color:rgb(255, 255, 255);
 }
- 
- .back {
-   transform: translateZ(-315px);
-   background-color:rgb(255, 215, 0);
-   border-style:outset;
-    border-color:rgb(255, 255, 255);
-   position:absolute;
-}
-
 .front {
-  transform: translateZ(100px);
+  transform: translateZ(-115px);
   position:absolute;
-  background-color:rgb(0, 215, 255, .5);
+ background-color:rgb(50,0,0);
 	border-style:outset;
-       border-color:rgb(255, 255, 255);
+       border-color:rgb(255,215,0);
 }
 
-.frontdoor {
-  height:210px;
-  width:150px;
-  bottom:0%;
-  left:150px;
-  transform: translateZ(192px);
-  position:absolute;
-  background-color:rgb(255, 255, 255);
-  border-style:outset;
-       border-color:rgb(255, 215, 0);
-}
-
-.frontwindow {
-  height:100px;
-  width:50px;
-  top:50px;
-  left:100px;
-  transform: translateZ(192px);
-  position:relative;
-   background-color:rgb(255, 255, 255, .5);
-	border-style:inset;
-       border-color:rgba(255, 215, 0);
-}
-
-.frontwindow2 {
-  height:100px;
-  width:50px;
-  bottom:50px;
-  left:50px;
-  transform: translateZ(192px);
-  position:absolute;
-   background-color:rgb(255, 255, 255, .5);
-	border-style:inset;
-            border-color:rgba(255, 215, 0);
-}
-
-.frontwindow3 {
-  height:100px;
-  width:50px;
-  top:50px;
-  right:100px;
-  transform: translateZ(192px);
-  position:absolute;
-   background-color:rgb(255, 255, 255, .5);
-	border-style:inset;
-            border-color:rgba(255, 215, 0);
-}
-
-.frontwindow4 {
-  height:100px;
-  width:50px;
-  bottom:50px;
-  right:50px;
-  transform: translateZ(192px);
-  position:absolute;
-   background-color:rgb(255, 255, 255, .5);
-	border-style:inset;
-            border-color:rgba(255, 215, 0);
-}
-
-.left {
+.frontpage1 {
+  left:0%;
   width: 100%;
-  transform: translateZ(-315px) rotateY(90deg);
+  transform: translateZ(-115px)  translate(-165px) rotateY(-220deg);
   transform-origin: right;
-  background-color:rgb(0, 215, 255, .5);
+  border-color:rgb(0, 0, 0);
+  background-size:100% 100%;
   border-style:outset;
-       border-color:rgb(255, 255, 255);
+      
+}	
+.frontpage2 {
+  left:0%;
+  width: 100%;
+  transform: translateZ(-115px)  translate(-165px) rotateY(-220deg);
+  transform-origin: right;
+  border-color:rgb(0, 0, 0);
+  background-size:100% 100%;
+  border-style:outset;
+}	
+.frontpage3 {
+  left:0%;
+  width: 100%;
+  transform: translateZ(-115px)  translate(-175px) rotateY(-220deg);
+  transform-origin: right;
+  border-color:rgb(0, 0, 0);
+  background-size:100% 100%;
+  border-style:outset;
+}	
+.frontpage4 {
+  left:0%;
+  width: 100%;
+  transform: translateZ(-115px)  translate(-185px) rotateY(-220deg);
+  transform-origin: right;
+  border-color:rgb(0, 0, 0);
+  background-size:100% 100%;
+  border-style:outset;
+       bacground-color:rgba(255, 255, 255, .1);
+}
+.frontpage5 {
+  left:0%;
+  width: 100%;
+  transform: translateZ(-115px)  translate(-195px) rotateY(-220deg);
+  transform-origin: right;
+border-color:rgb(0, 0, 0);
+  background-size:100% 100%;
+  border-style:outset;
+       bacground-color:rgba(255, 255, 255, .1);
+}
+.frontpage6 {
+  z-index:5;
+  left:0%;
+  width: 100%;
+  transform: translateZ(-115px)  translate(-205px) rotateY(-220deg);
+  transform-origin: right;
+  bacground-color:rgba(255, 255, 255,.8);
+  background-size:100% 100%;
+  border-size:thin;
+       border-color:rgb(0, 0, 0);
+      animation:lit 5s infinite ;
+       -webkit-animation: lit 5s alternate infinite;/* Safari 4.0 - 8.0 */
+}
+}
+
+@-webkit-keyframes lit{
+ 0% {  transform: translateZ(-115px)  translate(-205px) rotateY(-220deg);}
+100% {  transform: translateZ(-115px)  translate(-255px) rotateY(-310deg);}
+  
+}
+		  
+@keyframes  lit{
+ 0% {  transform: translateZ(-115px)  translate(-205px) rotateY(-220deg);}
+100% { transform: translateZ(-115px)  translate(-255px) rotateY(-310deg);}
+
+} 
+
+.left {left:0%;
+  width: 100%;
+  transform: translateZ(-115px)  translate(-155px) rotateY(-220deg);
+  transform-origin: right;
+  background-color:rgb(0,0,0);
+  background-size:100% 100%;
+  border-style:outset;
+       border-color:rgb(255,215,0);
 }	
 
 .right {
   width: 100%;
-  transform: translateZ(-315px) rotateY(-90deg);
+  transform: translateZ(-115px) rotateY(220deg);
   transform-origin: left;
-  background-color:rgb(0, 215, 255, .5);
+  background-color:rgb(0,255,255);
+  background-size:100% 100%;
   border-style:outset;
-       border-color:rgb(255, 255, 255);
+       border-color:rgb(255,215,0);
 }	
 
 	/* Safari 4.0 - 8.0 */
@@ -346,19 +354,6 @@ position:relative;
     font-family: ariel;
     text-align:center;
     }
-
-
-.myfuturisticcar{
-      background-image:url("https://lh3.googleusercontent.com/OS0zZDYCRobIT56QpbXlC04DY-9LmOUlYvNmsY-Ytnyzmwu0DwYUlCBjiH_EvJzIO4aBKixRSWhKZNU3ZCAkFFUoUMgK7VeqqTb7mxdy2s-PnP6SsMHCR4YK4IWMqTTirap8WHnsnINOdxXlsaHunthxbiwexf23xGjoxq6oNA893Qwb-IqaB3C_L6wtdQKoMVXnS40J-KivQgpcfXdutVOOvJQf2u-Kxz8nwOWfyfAM6b-r-Mygvp4tt5JEg8xnsuevZ6-y_sHDE8escb0QZqOWRn64HNxq7GioOWYv7YMqLQacxXCjhj1RM1ZWlFhA8QMBAwQhKj0u_GUerm2SUX9hrA-j2g-S_wRenQ4vnqTnJqqHXfm8PUxerDhJYWcoOCcTmx4npubtio3AS_yIm0LSHoSZGrerl7jSBAb2X1VdA2v6zMKy9pzHkm9XTcX0_dpEq5ZOoeSfMuQJcEXtyLnFHV45GCd_FLwkN2tcw1Ds9A1awMfwQM2SSqhJqPld8rfTPmhBAPA_-kt0DUsVTpGjKAK0e2dyNAoCJLwA9nf-_B1zGPL5UlQWTvWSpQnTw3YziSLzqi1-KzrdXJgcNREQmd0e3Av_0HUZyeo8OWJHEM1zGIr2UwoN8EFkt0c2NeUqXWZVu-T8cwGnGlj1aaVdJjlp1Rzn_KaiPs8zomneSpuUyORVN5zKs6d5LOzUqIwpbZ8QP5Ib6vidNhf6V3-jQPU_rY1BpX1IfidFMvSPDq2Jq2O8shH91GikBSYv79OkXfnXmXH06x1RnLmzyIFtmzuxq7Zzutu_=w720-h400-no?authuser=0");
-    background-size:700px 400px;
-    position:absolute;
-   width:700px;
-  height:400px;
-  bottom:200px;
-  right:300px;
-  z-index:9991;
-  
-  }
 
 .E2:hover {
     float:none;
@@ -390,15 +385,24 @@ body{
 
 </style>
   <head>
+	   <head>
 	    </head>
          
 <body>
 
 	
 <div class="cube">
-   <div class="side left"></div>
-   <div class="side right"></div>
-   <div class="side front">   </div>
+   <div class="side left">   
+     <img src="https://raw.githubusercontent.com/diamondrolls/play/master/images/the-holy-bible-60.jpg" height="100%" width="100%"> </div>
+   
+      <div class="side frontpage1">  </div>                                    <div class="side frontpage2">  </div>                             <div class="side frontpage3">  </div>                               <div class="side frontpage4">  </div>
+  <div class="side frontpage5">  </div>
+  <div class="side frontpage6"> <h1 class="neon" data-text=" Ecclesiastes 3:1
+1 There is a time for everything, and a season for every activity under the heavens: "> Ecclesiastes 3:1
+1 There is a time for everything, and a season for every activity under the heavens: </h1> </div>
+  <div class="side right">
+     <img src="https://raw.githubusercontent.com/diamondrolls/play/master/images/the-holy-bible-60.jpg" height="100%" width="100%"> </div>
+   <div class="sides front">   </div>
       
 </div>
 
