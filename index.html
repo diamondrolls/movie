@@ -62,33 +62,12 @@
 	border-style:outset;
 		   top:25%;
 }
-      .shooter{
-      background-color:rgb(0,255,0);
-    transform: translateZ(500px);
-position:absolute;
-      z-index:9999;
-	background-size:7px 25px;
-        height:7px;
-	width:25px;
-	left:70px;
-	top: 175px;
-	animation: kitty 1s infinite ;
-        -webkit-animation: kitty 1s infinite ;
-} 
-	.shooter2{
-      background-color:rgb(255,0,0);
-    transform: translateZ(500px);
-position:absolute;
-      z-index:9999;
-	background-size:7px 25px;
-        height:7px;
-	width:25px;
-	left:650px;
-	top: 175px;
-	animation: litty 2s infinite ;
-        -webkit-animation: litty 2s infinite ;
-} 	
+  	
 .sandwich{
+        background-color:rgb(255,0,0);
+    border-style:solid;
+     border-color:rgb(255,255,255);
+       border-radius:50px;
 		background-image:url(" https://raw.githubusercontent.com/diamondrolls/images/main/1E66309B-3F52-49C2-B9C2-B90266E7EDC2.png  ");
     transform: translateZ(500px);
 position:absolute;
@@ -98,7 +77,8 @@ position:absolute;
 	width:150px;
 	left:370px;
 	top:600px;
-	 
+	 animation: litty 3s infinite;
+        -webkit-animation: litty 3s infinite;
 } 
 		  
 		  
@@ -185,24 +165,21 @@ background-color:rgba(0, 215, 255, .5);
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes litty{
  0% { 
-       top: 175px;
-       left:650px;
+       transform:rotate(0deg);
        }
 100% { 
-        top: 175px;
-	left:10px;
+               transform:rotate(360deg);
            
           }
 }
 
 @keyframes litty{ 
 0%  { 
-       top: 175px;
-       left:650px;
+       transform:rotate(0deg);
        }
 100% { 
-        top: 175px;
-	left:10px;
+               transform:rotate(360deg);
+           
           }
         }
 
