@@ -16,7 +16,7 @@
    
 	</header>
           <style type= "text/css">
-		             p          {
+		         p          {
                                font-size: 15px;
                                color:rgb(0,0,0) ;
                                font-color:rgb(255,255,255);
@@ -50,56 +50,147 @@
 	border-radius:40px;
 	   z-index:99999;
  }
-		
+
+	   .registration{
+	border-color:rgb(0, 255, 255);
+	background-color:rgb(255, 209, 94);
+        z-index:99;
+	position:absolute;
+	border-radius:50px;
+        height:700px;
+	width:700px;
+	border-style:outset;
+		   top:25%;
+}
+      .shooter{
+      background-color:rgb(0,255,0);
+    transform: translateZ(500px);
+position:absolute;
+      z-index:9999;
+	background-size:7px 25px;
+        height:7px;
+	width:25px;
+	left:70px;
+	top: 175px;
+	animation: kitty 1s infinite ;
+        -webkit-animation: kitty 1s infinite ;
+} 
+	.shooter2{
+      background-color:rgb(255,0,0);
+    transform: translateZ(500px);
+position:absolute;
+      z-index:9999;
+	background-size:7px 25px;
+        height:7px;
+	width:25px;
+	left:650px;
+	top: 175px;
+	animation: litty 2s infinite ;
+        -webkit-animation: litty 2s infinite ;
+} 	
+.sandwich{
+		background-image:url(" https://raw.githubusercontent.com/diamondrolls/images/main/1E66309B-3F52-49C2-B9C2-B90266E7EDC2.png  ");
+    transform: translateZ(500px);
+position:absolute;
+      z-index:9999;
+	background-size:150px 150px;
+        height:150px;
+	width:150px;
+	left:350px;
+	top:600px;
+	 
+} 
+		  
+		  
+		  .lilfacebook{
+		background-image:url(" https://raw.githubusercontent.com/diamondrolls/images/main/94C1D5A6-77F7-4DB0-8620-19511B71E473.png  ");
+    transform: translateZ(500px);
+position:absolute;
+      z-index:99999;
+	background-size:800px 400px;
+        height:400px;
+	width:200px;
+	left:50px;
+	top:700px;
+	 animation: kitty 3s infinite alternate;
+        -webkit-animation: kitty 3s infinite alternate;
+} 
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes kitty{
+ 0% { 
+       top: 700px;
+       left:70;
+       }
+100% { 
+        top: 700px;
+	left:500px;
+           
+          }
+}
+
+@keyframes kitty{ 
+0% { 
+       top: 700px;
+       left:70;
+       }
+100% { 
+        top: 700px;
+	left:500px;
+           
+          }
+}
     .registrationbutton{
-background-color:rgb(0, 0, 0);
+background-color:rgb(0, 215, 255, .5);
 	background-size:300px 150px;      
-	  z-index:9999;
-	position:relative;
+	  z-index:999999;
+	position:absolute;
 	border-radius:50px;
         height:150px;
+        top:1300px;
 	width:90%;
        left:50px;
 	border-style:outset;
        border-color:rgb(255, 255, 255);
 }
 
-	  .searchbar1{
-width:95px;
-height:95px;
-	background-image:url("https://i.pinimg.com/originals/0f/75/c8/0f75c80521022af00f232e8ba9508ec4.png");
-	background-size:95px 95px;
-	background-repeat:no-repeat;
-border-style:outset;
-border-color:rgba(0,355,355,1);
-border-radius:50%;
-background-color:white;
+		   .registrationbutton2{
+background-color:rgba(0, 215, 255, .5);
+	background-size:300px 150px;      
+	  z-index:999999;
 	position:absolute;
+	border-radius:50px;
+        left:40%;
+        height:150px;
+        top:75px;
+	width:30%;
+	border-style:outset;
 }
 
-.searchbar{
-width:490px;
-height:100px;
-border-style:outset;
-border-color:rgba(0,355,355,1);
-border-radius:50px;
-background-color:rgb(0,0,0);
-}
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes litz{
- 0% { top:400px;}
-50% {top:600px;}
-100% { top: 400px;}
+@-webkit-keyframes litty{
+ 0% { 
+       top: 175px;
+       left:650px;
+       }
+100% { 
+        top: 175px;
+	left:10px;
+           
+          }
 }
-		  
-@keyframes  litz{
- 0% { top:400px;}
-50% {top:600px;}
-100% { top: 400px;}
 
-}
-
+@keyframes litty{ 
+0%  { 
+       top: 175px;
+       left:650px;
+       }
+100% { 
+        top: 175px;
+	left:10px;
+          }
+        }
 
 html {  background-image:url('https://i.pinimg.com/originals/d1/33/48/d13348d7a8b42622829ade83a8adfb19.jpg');
 	height:100%;
@@ -123,9 +214,9 @@ html {  background-image:url('https://i.pinimg.com/originals/d1/33/48/d13348d7a8
 
 
 h3{
-  color:rgb(255,255,255);
+  color:rgb(255,0,0);
   font-size:50px;
-
+	background-color:rgb(225, 225, 225);
 }
 
 h2{
@@ -147,13 +238,13 @@ h9{
 
 .neon
 {
-        position:absolute;
-        top:10%;
-        left:25%;
+  position:absolute;
+  top:10%;
+  left:25%;
 	translate:transform (-50%,-50%);
 	margin:0;
 	padding:0 20px;
-	font-size:30px;
+	font-size:45px;
 	color:#ffffff;
 	text-shadow:0 0 20px;
 }
@@ -181,34 +272,35 @@ h9{
 }
 h7{
 font-color:#ffffff;
+
 position:relevant;
 }
 
 .cube{
-  left:320px;
+        left:200px;   
         top:500px;
         position: absolute;
-	width:300px;
+	width:500px;
 	height:500px;
         transform-style:preserve-3d;
-        transform: rotate(50deg) rotateY(-100deg) rotateX(70deg) rotateZ(-1015deg);
-       animation:money 10s infinite ;
-       -webkit-animation: money 10s infinite;/* Safari 4.0 - 8.0 */
+        transform: rotateY(-100deg) rotateX(70deg) rotateZ(-1015deg);
+       animation:money 13s infinite ;
+       -webkit-animation: money 13s infinite;/* Safari 4.0 - 8.0 */
 }
  
 
-
+}
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes money{
- 0% { transform:rotateY(70deg);}
-100% { transform:rotateY(-30deg);}
+ 0% { transform:rotateY(0deg);}
+100% { transform:rotateY(360deg);}
 
   
 }
 		  
 @keyframes  money{
- 0% { transform:rotateY(70deg);}
-100% { transform:rotateY(-30deg);}
+ 0% { transform:rotateY(0deg);}
+100% { transform:rotateY(360deg);}
 
 }  
 
@@ -221,118 +313,107 @@ position:relevant;
   border-style:outset;
        border-color:rgb(255, 255, 255);
 }
-.sides {
-  width: 150px;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  border-style:outset;
+
+.top {
+  transform: translateZ(-315px);
+  transform: rotateY(10deg);
+  background-color:rgb(0, 215, 255, .5);
+	border-style:outset;
        border-color:rgb(255, 255, 255);
 }
-.front {
-  transform: translateZ(-115px);
-  position:absolute;
- background-color:rgb(50,0,0);
+
+.back {
+  transform: translateZ(-315px);
+  transform: rotateX(90deg);
+  transform-origin: center;
+  background-color:rgb(0, 215, 255, .5);
 	border-style:outset;
-       border-color:rgb(255,215,0);
+       border-color:rgb(255, 255, 255);
 }
-
-.frontpage1 {
-  background-color:rgba(0, 0, 0,.3);
-  left:0%;
-  width: 100%;
-  transform: translateZ(-115px)  translate(-165px) rotateY(-220deg);
-  transform-origin: right;
-  border-color:rgb(0, 0, 0);
-  background-size:100% 100%;
-  border-style:outset;
-      
-}	
-.frontpage2 {
-  left:0%;
-  width: 100%;
-  transform: translateZ(-115px)  translate(-165px) rotateY(-220deg);
-  transform-origin: right;
-  border-color:rgb(0, 0, 0);
-  background-size:100% 100%;
-  border-style:outset;
-}	
-.frontpage3 {
-  left:0%;
-  width: 100%;
-  transform: translateZ(-115px)  translate(-175px) rotateY(-220deg);
-  transform-origin: right;
-  border-color:rgb(0, 0, 0);
-  background-size:100% 100%;
-  border-style:outset;
-}	
-.frontpage4 {
-  left:0%;
-  width: 100%;
-  transform: translateZ(-115px)  translate(-185px) rotateY(-220deg);
-  transform-origin: right;
-  border-color:rgb(0, 0, 0);
-  background-size:100% 100%;
-  border-style:outset;
-       bacground-color:rgba(255, 255, 255, .1);
-}
-.frontpage5 {
-  left:0%;
-  width: 100%;
-  transform: translateZ(-115px)  translate(-195px) rotateY(-220deg);
-  transform-origin: right;
-border-color:rgb(0, 0, 0);
-  background-size:100% 100%;
-  border-style:outset;
-  background-color:rgba(0, 0, 0,.3);
-
-}
-.frontpage6 {
-  z-index:5;
-  left:0%;
-  width: 100%;
-  transform: translateZ(-115px)  translate(-205px) rotateY(-220deg);
-  transform-origin: right;
-  background-color:rgba(0, 0, 0,.3);
-  background-size:100% 100%;
-  border-size:thin;
-       border-color:rgb(0, 0, 0);
-      animation:lit 7s infinite ;
-       -webkit-animation: lit 7s alternate infinite;/* Safari 4.0 - 8.0 */
-}
-
-
-@-webkit-keyframes lit{
- 0% {  transform: translateZ(-115px)  translate(-205px) rotateY(-220deg);}
-100% {  transform: translateZ(-115px)  translate(-255px) rotateY(-310deg);}
   
+.front {
+  transform: translateZ(190px);
+  position:absolute;
+  background-color:rgb(0, 215, 255, .5);
+	border-style:outset;
+       border-color:rgb(255, 255, 255);
 }
-		  
-@keyframes  lit{
- 0% {  transform: translateZ(-115px)  translate(-205px) rotateY(-220deg);}
-100% { transform: translateZ(-115px)  translate(-255px) rotateY(-310deg);}
 
-} 
+.frontdoor {
+  height:210px;
+  width:150px;
+  bottom:0%;
+  left:150px;
+  transform: translateZ(192px);
+  position:absolute;
+  background-color:rgb(255, 255, 255);
+	border-style:outset;
+       border-color:rgb(255, 215, 0);
+}
+.frontwindow {
+  height:100px;
+  width:50px;
+  top:50px;
+  left:100px;
+  transform: translateZ(192px);
+  position:relative;
+   background-color:rgb(255, 255, 255, .5);
+	border-style:inset;
+       border-color:rgba(255, 215, 0);
+}
 
-.left {left:0%;
+.frontwindow2 {
+  height:100px;
+  width:50px;
+  bottom:50px;
+  left:50px;
+  transform: translateZ(192px);
+  position:absolute;
+   background-color:rgb(255, 255, 255, .5);
+	border-style:inset;
+            border-color:rgba(255, 215, 0);
+}
+
+.frontwindow3 {
+  height:100px;
+  width:50px;
+  top:50px;
+  right:100px;
+  transform: translateZ(192px);
+  position:absolute;
+   background-color:rgb(255, 255, 255, .5);
+	border-style:inset;
+            border-color:rgba(255, 215, 0);
+}
+
+.frontwindow4 {
+  height:100px;
+  width:50px;
+  bottom:50px;
+  right:50px;
+  transform: translateZ(192px);
+  position:absolute;
+   background-color:rgb(255, 255, 255, .5);
+	border-style:inset;
+            border-color:rgba(255, 215, 0);
+}
+
+.left {
   width: 100%;
-  transform: translateZ(-115px)  translate(-155px) rotateY(-220deg);
+  transform: translateZ(-315px) rotateY(90deg);
   transform-origin: right;
-  background-color:rgb(0,0,0);
-  background-size:100% 100%;
+  background-color:rgb(0, 215, 255, .5);
   border-style:outset;
-       border-color:rgb(255,215,0);
+       border-color:rgb(255, 255, 255);
 }	
 
 .right {
   width: 100%;
-  transform: translateZ(-115px) rotateY(220deg);
+  transform: translateZ(-315px) rotateY(-90deg);
   transform-origin: left;
-  background-color:rgb(0,255,255);
-  background-size:100% 100%;
+  background-color:rgb(0, 215, 255, .5);
   border-style:outset;
-       border-color:rgb(255,215,0);
+       border-color:rgb(255, 255, 255);
 }	
 
 	/* Safari 4.0 - 8.0 */
@@ -362,6 +443,18 @@ position:relative;
     text-align:center;
     }
 
+
+. E2{
+      text-decoration: none;
+    color: red;
+    display: block;
+   width:400px;
+  height:150px;
+  overflow:scroll;
+	font-size:30px;
+
+}
+
 .E2:hover {
     float:none;
     background-color:aqua; 
@@ -381,8 +474,8 @@ ul li:hover ul li {
 }
 
 body{
-	background-image:url("https://raw.githubusercontent.com/diamondrolls/play/master/images/5FD2BBAE-48F3-44BE-8842-F55EA43A43BB.png" );
-         background-size:100% 2000px;
+	background-image:url("https://raw.githubusercontent.com/diamondrolls/images/main/FD214F52-B3E4-43DA-ABBC-6747911DF82B.gif");
+        background-size:100% 2000px;
          overflow:hidden;
 	 width:98%;
 	 height:2000px;
@@ -391,46 +484,20 @@ body{
 
 </style>
   <head>
-	   <head>
-<center> <ul> 
-<button><li><div class="searchbar1"> 
-		</div>
-<ul>
-<li>
-		<div class="searchbar"><h1>Quick Search</h1></div>
-		<a href='https://diamondrolls.github.io/frontpage/'><div class="searchbar"><h1>NFT Home</h1></div></a>
-               <a href='https://diamondrolls.github.io/john/'> <div class="searchbar"><h1>John</h1></div></a>
-	  </li>
-</ul>
-</li></button>
-</ul></center>
-
-
 	    </head>
          
 <body>
 
-	
-<div class="cube">
-   <div class="side left">   
-     <img src="https://raw.githubusercontent.com/diamondrolls/play/master/images/the-holy-bible-60.jpg" height="100%" width="100%"> </div>
-   
-      <div class="side frontpage1"> <h1 class="neon" data-text=" Diamondrolls LLC"> Diamondrolls LLC </h1> </div>                                  
-  <div class="side frontpage2">  </div>                          
-   <div class="side frontpage3">  </div>                             
-  <div class="side frontpage4">  </div>
-  <div class="side frontpage5">  </div>
-  <div class="side frontpage6"> <h1 class="neon" data-text=" Ecclesiastes 3:1
-There is a time for everything, and a season for every activity under the heavens:" > Ecclesiastes 3:1
-There is a time for everything, and a season for every activity under the heavens: </h1> </div>
-  <div class="side right">
-     <img src="https://raw.githubusercontent.com/diamondrolls/play/master/images/the-holy-bible-60.jpg" height="100%" width="100%"> </div>
-   <div class="sides front">   </div>
-      
-</div>
- <center><a href="https://crypto.com/nft/collection/93ee18d7e5074eb228c541ba01d750ed"> <div class="registrationbutton"> <h3>Buy This Script </h3> </div></a></center>
+	<a href="https://diamondrolls.github.io/thepremiumway/">  <div class="registrationbutton2"> <h7 class="neon" data-text="Lil Facebook"> Lil Facebook </h7></div></a>
+
+
+ <div class="sandwich"></div>
+<div class="lilfacebook"></div>
+ <center> <a href='https://diamondrolls.github.io/thepremiumway/'> <div class="registrationbutton"> <h7 class="neon" data-text=" Chicken Sandwich Lab ">  Chicken Sandwich Lab </h7>  </div></a></center>
+
   	<script>
-</script>
+
+		</script>
           </body>
 <footer> 
          </footer>
