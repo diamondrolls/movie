@@ -64,7 +64,7 @@
 }
   	
 .sandwich{
-      opacity:.7;
+
     border-style:solid;
      border-color:rgb(255,255,255);
        border-radius:50%;
@@ -174,21 +174,56 @@ background-color:rgba(0, 215, 255, .5);
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes litty{
- 0% { 
+ 0% { opacity:0;
        transform:rotate(0deg);
+       left:370px;
+	top:600px;
+
        }
-100% { 
-               transform:rotate(360deg);
-           
+50% { opacity:1;
+               transform:rotate(0deg);
+           left:370px;
+	top:600px;
           }
+
+75% { opacity:1;
+               transform:rotate(180deg);
+           left:570px;
+	top:700px;
+          }
+
+100% { opacity:1;
+               transform:rotate(180deg);
+           left:700px;
+	top:700px;
+          }
+
 }
 
 @keyframes litty{ 
 0%  { 
+       opacity:0;
        transform:rotate(0deg);
+       left:370px;
+	top:600px;
+
        }
-100% { 
-               transform:rotate(360deg);
+50% { opacity:1;
+               transform:rotate(0deg);
+           left:370px;
+	top:600px;
+          }
+
+75% { opacity:1;
+               transform:rotate(180deg);
+           left:570px;
+	top:700px;
+          }
+
+100% { opacity:1;
+               transform:rotate(180deg);
+           left:700px;
+	top:700px;
            
           }
         }
