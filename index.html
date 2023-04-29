@@ -95,7 +95,8 @@ position:absolute;
 } 
 			  
 		.sandwich2{
-
+       top:900px;
+      right:400px;
     border-style:solid;
      border-color:rgb(255,255,255);
        border-radius:50%;
@@ -106,7 +107,50 @@ position:absolute;
 	background-size:150px 150px;
         height:150px;
 	width:150px;
+
+animation: hurry 5s infinite alternate;
+        -webkit-animation: hurry 5s infinite alternate;
 }  
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes hurry{
+ 0% { 
+       transform: rotate(0deg);
+       top: 900px;
+       left:300px;
+       }
+           
+     50% { transform: rotate(70deg);
+       top: 900px;
+       left:400px;
+       }
+ 100% { 
+        50% { transform: rotate(-70deg);
+        top: 900px;
+	left:500px;
+           
+          }
+}
+
+@keyframes hurry{ 
+
+0% {   transform: rotate(0deg);
+       top: 900px;
+       left:300px;
+       }
+           
+     50% { transform: rotate(70deg);
+       top: 900px;
+       left:400px;
+       }
+ 100% { 
+        50% { transform: rotate(-70deg);
+        top: 900px;
+	left:500px;
+           
+          }
+}
+
 		  .lilfacebook{
 		background-image:url(" https://raw.githubusercontent.com/diamondrolls/images/main/8933B4C4-99E5-4D6D-B72D-3521255D5872.png  ");
     transform: translateZ(500px);
@@ -511,8 +555,10 @@ body{
 
 
  <div class="sandwich"></div>  <div class="sandwich1"></div>
-<div class="lilfacebook"> <br> <br> <br> <div class="sandwich2"></div> </div>
+<div class="lilfacebook"> </div>
  <center> <a href='https://diamondrolls.github.io/thepremiumway/'> <div class="registrationbutton"> <h7 class="neon" data-text=" Chicken Sandwich Lab ">  Chicken Sandwich Lab </h7>  </div></a></center>
+
+<div class="sandwich2"></div>
 
   	<script>
 
