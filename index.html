@@ -152,12 +152,12 @@ background-color:rgb(0, 215, 255, .5);
 	position:absolute;
 	border-radius:50px;
         height:150px;
-        top:230px;
+        top:75px;
 	width:90%;
        left:50px;
 	border-style:outset;
        border-color:rgb(255, 255, 255);
-     animation: alotofmomey 5s infinite alternate;
+     animation: alotofmoney 5s infinite alternate;
         -webkit-animation: alotofmoney 5s infinite alternate;
 } 
 
@@ -170,10 +170,28 @@ background-color:rgba(0, 215, 255, .5);
         left:40%;
         height:150px;
         top:75px;
-	width:30%;
+	width:400px;
 	border-style:outset;
+        animation: alotofmoney 5s infinite alternate;
+        -webkit-animation: alotofmoney 5s infinite alternate;
 }
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes alotofmoney{
+0% { top:75px;
+	}
 
+100% { top:150px;
+
+}
+		  }
+@keyframes alotofmoney{ 
+0% { top:75px;
+	}
+
+100% { top:150px;
+
+}
+	}
 
 
 /* Safari 4.0 - 8.0 */
